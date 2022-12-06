@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/05 14:46:18 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/06 12:04:08 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = 				push_swap
 
 #NAME_BONUS =		pipex_bonus
 
-SRC_FILE = 			main.c	lstadd_back.c lstlast.c lstnew.c
+SRC_FILE = 			main.c	lstadd_back.c lstlast.c lstnew.c lstadd_front.c push_a.c push_b.c
 
 #SRC_FILE_BONUS =	pipex_bonus.c cmd_bonus.c destroy_bonus.c exec_bonus.c
 
@@ -46,6 +46,9 @@ all:	$(NAME)
 
 $(NAME):			$(LIBFT) $(SRC_OBJ)
 					$(CC) $(SRC_OBJ) $(LIBFT) -o $(NAME)
+
+run:
+	./push_swap					
 
 #$(NAME_BONUS):		$(LIBFT) $(SRC_OBJ_BONUS)
 #					$(CC) $(SRC_OBJ_BONUS) $(LIBFT) -o $(NAME_BONUS)

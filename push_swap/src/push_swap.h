@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/05 14:41:04 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/06 12:05:44 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,14 @@ typedef struct s_data
 	t_stack	*stack_b;
 }	t_data;
 
+/* Linked List Function */
 t_stack	*lstnew(int number);
 t_stack	*lstlast(t_stack *lst);
 void	lstadd_back(t_stack **lst, t_stack *new);
+void	lstadd_front(t_stack **lst, t_stack *new);
+
+/* Push Swap Function */
+void	push_a(t_data *data);
+void	push_b(t_data *data);
 
 #endif
