@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 12:05:44 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/06 15:26:03 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,8 @@ void	lstadd_front(t_stack **lst, t_stack *new);
 /* Push Swap Function */
 void	push_a(t_data *data);
 void	push_b(t_data *data);
+void	swap_a(t_data *data);
+void	swap_b(t_data *data);
+void	swap_ss(t_data *data);
 
 #endif

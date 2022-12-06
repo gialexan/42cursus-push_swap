@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lstnew.c                                           :+:      :+:    :+:   */
+/*   swap_a.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/30 21:42:53 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 18:14:40 by gialexan         ###   ########.fr       */
+/*   Created: 2022/12/06 15:20:28 by gialexan          #+#    #+#             */
+/*   Updated: 2022/12/06 18:14:48 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stack	*lstnew(int number)
+void	swap_a(t_data *data)
 {
 	t_stack *tmp;
-	
-	tmp = malloc(sizeof(t_stack));
-	if (!tmp)
-		return (NULL);
-	tmp->number = number;
-	tmp->next = NULL;
 
-	return (tmp);
+	tmp = data->stack_a->next->next;
+	lstadd_front(&data->stack_a, data->stack_a->next);
+	data->stack_a->next->next = tmp;
+	tmp = NULL;
 }

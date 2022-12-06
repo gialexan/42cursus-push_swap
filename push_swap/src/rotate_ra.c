@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lstnew.c                                           :+:      :+:    :+:   */
+/*   rotate_ra.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/30 21:42:53 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 18:14:40 by gialexan         ###   ########.fr       */
+/*   Created: 2022/12/06 18:19:38 by gialexan          #+#    #+#             */
+/*   Updated: 2022/12/06 18:20:14 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stack	*lstnew(int number)
+void	rotate_ra(t_data *data)
 {
-	t_stack *tmp;
 	
-	tmp = malloc(sizeof(t_stack));
-	if (!tmp)
-		return (NULL);
-	tmp->number = number;
-	tmp->next = NULL;
-
-	return (tmp);
 }
