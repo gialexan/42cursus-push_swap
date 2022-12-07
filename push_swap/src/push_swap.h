@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/07 19:09:14 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/07 22:24:02 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,9 @@ void	push_b(t_data *data);
 void	swap_a(t_data *data);
 void	swap_b(t_data *data);
 void	swap_ss(t_data *data);
+void	rotate_ra(t_data *data);
+void	rotate_rb(t_data *data);
+void	rotate_rr(t_data *data);
+
 
 #endif

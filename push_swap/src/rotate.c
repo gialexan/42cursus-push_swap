@@ -1,23 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   swap_a.c                                           :+:      :+:    :+:   */
+/*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 15:20:28 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 18:14:48 by gialexan         ###   ########.fr       */
+/*   Created: 2022/12/06 18:19:38 by gialexan          #+#    #+#             */
+/*   Updated: 2022/12/07 22:25:04 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	swap_a(t_data *data)
+void	rotate_rr(t_data *data)
+{
+	rotate_ra(data);
+	rotate_rb(data);
+}
+
+void	rotate_ra(t_data *data)
 {
 	t_stack *tmp;
+	t_stack *head;
 
-	tmp = data->stack_a->next->next;
-	lstadd_front(&data->stack_a, data->stack_a->next);
-	data->stack_a->next->next = tmp;
-	tmp = NULL;
+	head = data->stack_a;
+	tmp = data->stack_a;
+
+	lstadd_back(&tmp, head);
+	data->stack_a = head->next;
+	head->next = NULL;
+}
+
+void	rotate_rb(t_data *data)
+{
+	t_stack *tmp;
+	t_stack *head;
+
+	head = data->stack_b;
+	tmp = data->stack_b;
+
+	lstadd_back(&tmp, head);
+	data->stack_b = head->next;
+	head->next = NULL;
 }
