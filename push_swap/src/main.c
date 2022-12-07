@@ -7,36 +7,35 @@
 #include "push_swap.h"
 
 void	stack_up(t_data *data);
-void	init_data(t_data *data, int *array);
+void	init_data(t_data *data);
+
 
 int main(void)
 {
-	int array[] = {1, 2, 3, 4, 5};
-
 	t_data data;
 
-	init_data(&data, array);
+	init_data(&data);
 	stack_up(&data);
-	//printf("-------------------------------------------\n");
+	
 	t_stack *tmp;
 	tmp = data.stack_a;
 	while (tmp->next != NULL)
 	{
-		printf("%d\n", tmp->number);
+		printf("-> value %d | pointer -> %p\n", tmp->number, tmp->next);
 		tmp = tmp->next;
 	}
+	printf("-> value %d | pointer -> %p\n", tmp->number, tmp->next);
 }
 
 void	stack_up(t_data *data)
 {
-	int i = -1;
-	while (data->stack[++i])
-		lstadd_back(&data->stack_a, lstnew(data->stack[i]));
+	int i = 0;
+	while (++i <= 5)
+		lstadd_back(&data->stack_a, lstnew(i));
 }
 
-void	init_data(t_data *data, int *array)
+void	init_data(t_data *data)
 {
-	data->stack = array;
 	data->stack_a = NULL;
 	data->stack_b = NULL;
 }

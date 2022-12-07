@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 11:58:12 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 18:53:13 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/07 19:25:13 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	push_b(t_data *data)
 {
 	t_stack	*tmp;
+	
 	if (data->stack_b == NULL)
 		data->stack_b = lstnew(data->stack_a->number);
 	else

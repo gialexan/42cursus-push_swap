@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 15:26:03 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/07 19:09:14 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@ typedef struct s_stack
 
 typedef struct s_data
 {
-	int	*stack;
 	t_stack	*stack_a;
 	t_stack	*stack_b;
+	int	stack[];
 }	t_data;
 
 /* Linked List Function */
+int		lstsize(t_stack *lst);
 t_stack	*lstnew(int number);
 t_stack	*lstlast(t_stack *lst);
 void	lstadd_back(t_stack **lst, t_stack *new);
