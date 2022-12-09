@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 18:19:38 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/07 22:42:39 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/09 13:55:57 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ void	rotate_ra(t_data *data)
 	lstadd_back(&tmp, head);
 	data->stack_a = head->next;
 	head->next = NULL;
+	tmp = NULL;
+	head = NULL;
 }
 
 void	rotate_rb(t_data *data)
@@ -42,4 +44,6 @@ void	rotate_rb(t_data *data)
 	lstadd_back(&tmp, head);
 	data->stack_b = head->next;
 	head->next = NULL;
+	tmp = NULL;
+	head = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 11:57:42 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/07 22:42:51 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/09 13:56:23 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	push_a(t_data *data)
 	tmp = data->stack_b->next;
 	free(data->stack_b);
 	data->stack_b = tmp;
+	tmp = NULL;
 }
 
 void	push_b(t_data *data)
@@ -36,4 +37,5 @@ void	push_b(t_data *data)
 	tmp = data->stack_a->next;
 	free(data->stack_a);
 	data->stack_a = tmp;
+	tmp = NULL;
 }

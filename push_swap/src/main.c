@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/09 14:08:06 by gialexan          #+#    #+#             */
+/*   Updated: 2022/12/09 14:25:28 by gialexan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,6 +29,7 @@ int main(void)
 	/* test push
 	push_b(&data);
 	push_b(&data);
+	reverse_rotate_rrr(&data);
 	printf("-> value(%d) | pointer -> %p\n", data.stack_b->number, data.stack_b->next);
 	printf("-> value(%d) | pointer -> %p\n", data.stack_b->next->number, data.stack_b->next->next);
 	push_a(&data);
