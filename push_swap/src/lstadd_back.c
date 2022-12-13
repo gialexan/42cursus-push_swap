@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 21:59:19 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 18:14:33 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/13 18:07:23 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ void	lstadd_back(t_stack **lst, t_stack *new)
 		tmp = lstlast(*lst);
 		tmp->next = new;
 	}
+	tmp = NULL;
 }
