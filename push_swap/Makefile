@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/09 13:58:39 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/12 20:25:06 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ NAME = 				push_swap
 
 SRC_FILE = 			main.c 					\
 					lstnew.c				\
-					lstlast.c				\
+					lstlast.c       		\
+					lstsize.c				\
 					lstadd_back.c 			\
 					lstadd_front.c 			\
 					push.c 					\
@@ -56,7 +57,7 @@ $(NAME):			$(LIBFT) $(SRC_OBJ)
 					$(CC) $(SRC_OBJ) $(LIBFT) -o $(NAME)
 
 run:
-	./push_swap					
+	./push_swap		1 3 0 4 7 9			
 
 #$(NAME_BONUS):		$(LIBFT) $(SRC_OBJ_BONUS)
 #					$(CC) $(SRC_OBJ_BONUS) $(LIBFT) -o $(NAME_BONUS)
