@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/16 20:05:06 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/17 00:43:24 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,9 @@ SRC_FILE = 			main.c 					\
 					push.c 					\
 					swap.c					\
 					rotate.c				\
+					algorithm.c 			\
+					validations.c 			\
+					myclear.c 				\
 					reverse_rotate.c		
 
 #SRC_FILE_BONUS =	pipex_bonus.c cmd_bonus.c destroy_bonus.c exec_bonus.c

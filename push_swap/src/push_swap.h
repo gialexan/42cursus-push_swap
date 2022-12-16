@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/16 20:15:50 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/17 00:49:54 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,10 @@ typedef struct s_stack
 	int	number;
 	int index;
 	struct	s_stack *next;
-	
 }	t_stack;
 
 typedef struct s_data
 {
-	char	**argv;
 	t_stack	*stack_a;
 	t_stack	*stack_b;
 }	t_data;
@@ -54,5 +52,14 @@ void	rotate_rr(t_data *data);
 void	reverse_rotate_ra(t_data *data);
 void	reverse_rotate_rb(t_data *data);
 void	reverse_rotate_rrr(t_data *data);
+
+/* Help Function */
+void	sorted_position(t_data *data);
+void	myclear(t_stack *stack, int error);
+void	stack_up(t_data *data, char **argv);
+
+
+/* algorithm */
+void	radix_sort(t_data *data);
 
 #endif
