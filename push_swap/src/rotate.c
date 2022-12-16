@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 18:19:38 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/09 13:55:57 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/16 12:00:29 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	rotate_ra(t_data *data)
 
 	head = data->stack_a;
 	tmp = data->stack_a;
-
+	
 	lstadd_back(&tmp, head);
 	data->stack_a = head->next;
 	head->next = NULL;
