@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:42:09 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/17 00:44:22 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/17 01:35:00 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,31 @@ void	stack_up(t_data *data, char **argv)
 	free(tmp);
 	tmp = NULL;
 	if (error > 0)
+		myclear(data->stack_a, 1);
+}
+
+void	is_sorted_stack(t_data *data)
+{
+	int count;
+	t_stack *head;
+	t_stack *ptr;
+
+	head = data->stack_a;
+	count = 0;
+	while (head->next != NULL)
+	{
+		ptr = head->next;
+		while(ptr != NULL)
+		{
+			if (head->number == ptr->number)
+			{
+				count++;
+				break;
+			}
+			ptr = ptr->next;
+		}
+		head = head->next;
+	}
+	if (count > 0)
 		myclear(data->stack_a, 1);
 }

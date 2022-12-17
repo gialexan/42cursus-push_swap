@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/17 00:43:24 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/17 01:29:53 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ $(NAME):			$(LIBFT) $(SRC_OBJ)
 					$(CC) $(SRC_OBJ) $(LIBFT) -o $(NAME)
 
 run:
-	./push_swap  1 3 0 4 7 9 10 17 19 20 100 200 120		
+	./push_swap  1 3 0 4 7 9 10 17 19 20 100 200 1		
 
 #$(NAME_BONUS):		$(LIBFT) $(SRC_OBJ_BONUS)
 #					$(CC) $(SRC_OBJ_BONUS) $(LIBFT) -o $(NAME_BONUS)
