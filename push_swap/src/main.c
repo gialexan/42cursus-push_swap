@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 14:08:06 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/17 01:34:47 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/17 20:47:26 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	stack_up(&data, argv);
 	is_sorted_stack(&data);
 	sorted_position(&data);
-	printf("aki");
+	sort_three(&data);
 	//radix_sort(&data);
 	print(data.stack_a);
 }

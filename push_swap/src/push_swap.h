@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/17 01:35:20 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/17 20:45:07 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ void	stack_up(t_data *data, char **argv);
 
 /* algorithm */
 void	radix_sort(t_data *data);
+void	sort_three(t_data *data);
 
 #endif
