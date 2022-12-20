@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   print.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/09 14:08:06 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 16:54:16 by gialexan         ###   ########.fr       */
+/*   Created: 2022/12/20 16:50:48 by gialexan          #+#    #+#             */
+/*   Updated: 2022/12/20 16:51:10 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int main(int argc, char **argv)
+void	print(t_stack *head)
 {
-	t_data data;
-
-	data.stack_a = NULL;
-	data.stack_b = NULL;
-	stack_up(&data, argv);
-	is_sorted_stack(&data);
-	sorted_position(&data);
-	sort_five(&data);
-	///radix_sort(&data);
-	//print(data.stack_a);
-	//print(data.stack_b);
+	t_stack *tmp;
+	
+	tmp = head;
+	while (tmp != NULL)
+	{
+		printf("value -> %d | index -> %d | pointer -> %p\n", tmp->number, tmp->index, tmp->next);
+		tmp = tmp->next;
+	}
+	printf("\n");
 }
-

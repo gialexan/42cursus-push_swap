@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/17 21:17:55 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/20 16:57:13 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,14 +19,16 @@ SRC_FILE = 			main.c 					\
 					lstclear.c				\
 					lstadd_back.c 			\
 					lstadd_front.c 			\
+					reverse_rotate.c		\
+					rotate.c				\
 					push.c 					\
 					swap.c					\
-					rotate.c				\
-					algorithm.c 			\
-					validations.c 			\
+					print.c					\
 					myclear.c 				\
-					sort_three.c			\
-					reverse_rotate.c		
+					auxiliary.c				\
+					sort_five.c 			\
+					radix_sort.c 			\
+					sort_three.c			
 
 SRC_DIR = 			src
 
@@ -50,7 +52,7 @@ $(NAME):			$(LIBFT) $(SRC_OBJ)
 					$(CC) $(SRC_OBJ) $(LIBFT) -o $(NAME)
 
 run:
-	./push_swap  3 2 1
+	./push_swap    71 100 97 36 55
 
 $(LIBFT):
 					$(MAKE) -C $(LIBFT_DIR)

@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/17 20:45:07 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 16:51:20 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,13 +54,13 @@ void	reverse_rotate_rb(t_data *data);
 void	reverse_rotate_rrr(t_data *data);
 
 /* Help Function */
+void	print(t_stack *head);
 void	sorted_position(t_data *data);
 void	is_sorted_stack(t_data *data);
 void	myclear(t_stack *stack, int error);
 void	stack_up(t_data *data, char **argv);
-
-
 /* algorithm */
+void	sort_five(t_data *data);
 void	radix_sort(t_data *data);
 void	sort_three(t_data *data);
 

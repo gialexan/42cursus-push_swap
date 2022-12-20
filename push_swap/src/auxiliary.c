@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:42:09 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/17 01:35:00 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 16:55:10 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,24 @@ void	is_sorted_stack(t_data *data)
 	}
 	if (count > 0)
 		myclear(data->stack_a, 1);
+}
+
+void	sorted_position(t_data *data)
+{
+	t_stack *tmp;
+	t_stack	*tmp1;
+
+	tmp = data->stack_a;
+	while (tmp != NULL)
+	{
+		tmp->index = 1;
+		tmp1 = data->stack_a;
+		while (tmp1 != NULL)
+		{
+			if (tmp->number > tmp1->number)
+				tmp->index++;
+			tmp1 = tmp1->next;
+		}
+		tmp = tmp->next;	
+	}
 }
