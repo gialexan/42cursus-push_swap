@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:29:53 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 19:59:59 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 22:36:18 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,9 @@ void	myclear(t_stack *stack, int error)
 	{
 		lstclear(&stack);
 		exit(1);
+	}
+	else if (error == 2)
+	{
+		lstclear(&stack);
 	}
 }

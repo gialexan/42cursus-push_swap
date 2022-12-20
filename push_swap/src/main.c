@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 14:08:06 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 20:04:30 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 22:57:18 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	main(int argc, char **argv)
 	stack_up(&data, argv);
 	is_sorted_stack(&data);
 	sorted_position(&data);
-	sort_five(&data);
-	print(data.stack_a);
+	radix_sort(&data);
+	myclear(data.stack_a, 2);
+	myclear(data.stack_b, 2);
+	return (0);
 }
