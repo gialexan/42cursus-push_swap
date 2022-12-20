@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 15:20:28 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/07 22:42:34 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 19:55:08 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	swap_ss(t_data *data)
 
 void	swap_a(t_data *data)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	tmp = data->stack_a->next->next;
 	lstadd_front(&data->stack_a, data->stack_a->next);
@@ -30,7 +30,7 @@ void	swap_a(t_data *data)
 
 void	swap_b(t_data *data)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	tmp = data->stack_b->next->next;
 	lstadd_front(&data->stack_b, data->stack_b->next);

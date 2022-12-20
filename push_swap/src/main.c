@@ -6,15 +6,15 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 14:08:06 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 16:54:16 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 20:04:30 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	t_data data;
+	t_data	data;
 
 	data.stack_a = NULL;
 	data.stack_b = NULL;
@@ -22,8 +22,5 @@ int main(int argc, char **argv)
 	is_sorted_stack(&data);
 	sorted_position(&data);
 	sort_five(&data);
-	///radix_sort(&data);
-	//print(data.stack_a);
-	//print(data.stack_b);
+	print(data.stack_a);
 }
-

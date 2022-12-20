@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 18:19:38 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/16 12:00:29 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 20:02:09 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@ void	rotate_rr(t_data *data)
 
 void	rotate_ra(t_data *data)
 {
-	t_stack *tmp;
-	t_stack *head;
+	t_stack	*tmp;
+	t_stack	*head;
 
 	head = data->stack_a;
 	tmp = data->stack_a;
-	
 	lstadd_back(&tmp, head);
 	data->stack_a = head->next;
 	head->next = NULL;
@@ -35,12 +34,11 @@ void	rotate_ra(t_data *data)
 
 void	rotate_rb(t_data *data)
 {
-	t_stack *tmp;
-	t_stack *head;
+	t_stack	*tmp;
+	t_stack	*head;
 
 	head = data->stack_b;
 	tmp = data->stack_b;
-
 	lstadd_back(&tmp, head);
 	data->stack_b = head->next;
 	head->next = NULL;

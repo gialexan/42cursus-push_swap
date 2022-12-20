@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 16:51:20 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 20:00:23 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 
 typedef struct s_stack
 {
-	int	number;
-	int index;
-	struct	s_stack *next;
+	int				number;
+	int				index;
+	struct s_stack	*next;
 }	t_stack;
 
 typedef struct s_data

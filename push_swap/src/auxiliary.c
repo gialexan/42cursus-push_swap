@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   validations.c                                      :+:      :+:    :+:   */
+/*   auxiliary.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:42:09 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 16:55:10 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 19:59:28 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static  char	*ignore(char *argv)
+static	char	*ignore(char *argv)
 {
-	char *ref;
+	char	*ref;
 
 	ref = argv;
-	
 	if (ft_strlen(ref) && ref[0] == '+')
 		ref++;
-	while(ft_strlen(ref) && ref[0] == '0' && ft_isdigit(ref[1]))
+	while (ft_strlen(ref) && ref[0] == '0' && ft_isdigit(ref[1]))
 		ref++;
 	return (ref);
 }
@@ -41,7 +40,7 @@ void	stack_up(t_data *data, char **argv)
 		if (ft_strcmp(tmp, ignore(argv[count])))
 		{
 			error++;
-			break;
+			break ;
 		}
 		else
 			lstadd_back(&data->stack_a, lstnew(value, -1));
@@ -56,21 +55,21 @@ void	stack_up(t_data *data, char **argv)
 
 void	is_sorted_stack(t_data *data)
 {
-	int count;
-	t_stack *head;
-	t_stack *ptr;
+	int		count;
+	t_stack	*head;
+	t_stack	*ptr;
 
-	head = data->stack_a;
 	count = 0;
+	head = data->stack_a;
 	while (head->next != NULL)
 	{
 		ptr = head->next;
-		while(ptr != NULL)
+		while (ptr != NULL)
 		{
 			if (head->number == ptr->number)
 			{
 				count++;
-				break;
+				break ;
 			}
 			ptr = ptr->next;
 		}
@@ -82,7 +81,7 @@ void	is_sorted_stack(t_data *data)
 
 void	sorted_position(t_data *data)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 	t_stack	*tmp1;
 
 	tmp = data->stack_a;
@@ -96,6 +95,6 @@ void	sorted_position(t_data *data)
 				tmp->index++;
 			tmp1 = tmp1->next;
 		}
-		tmp = tmp->next;	
+		tmp = tmp->next;
 	}
 }

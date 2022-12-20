@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 21:42:53 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/16 12:45:11 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 20:01:29 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_stack	*lstnew(int number, int index)
 {
-	t_stack *tmp;
-	
+	t_stack	*tmp;
+
 	tmp = malloc(sizeof(t_stack));
 	if (!tmp)
 		return (NULL);

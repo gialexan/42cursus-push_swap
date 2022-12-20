@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 22:03:52 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 16:48:35 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/20 20:01:15 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	get_small_index(t_stack *stack)
 {
-	int position;
-	static int index = 1;
-	
+	int			position;
+	static int	index = 1;
+
 	position = 0;
-	while(stack)
+	while (stack)
 	{
 		position++;
 		if (stack->index == index)
@@ -26,13 +26,13 @@ int	get_small_index(t_stack *stack)
 		stack = stack->next;
 	}
 	index++;
-	return(position);
+	return (position);
 }
 
 void	small_to_stack_b(t_data *data)
 {
-	int tmp;
-	int count;
+	int	tmp;
+	int	count;
 	int	size_a;
 
 	size_a = lstsize(data->stack_a);
