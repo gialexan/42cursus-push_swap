@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 17:39:28 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/13 21:22:15 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/21 20:42:04 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # define HEXALOW	"0123456789abcdef"
 # define HEXAUPP	"0123456789ABCDEF"
 # define FLAGS		"cspdiuxX%"
+# define INT_MAX	2147483647
 
 # define BUFFER_SIZE 42
 

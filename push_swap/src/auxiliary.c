@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:42:09 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 19:59:28 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/21 19:57:37 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,28 +27,28 @@ static	char	*ignore(char *argv)
 void	stack_up(t_data *data, char **argv)
 {
 	char	*tmp;
+	char	*ptr;
 	int		count;
-	int		value;
 	int		error;
 
 	count = 0;
 	error = 0;
 	while (argv[++count])
 	{
-		value = ft_atoi(argv[count]);
-		tmp = ft_itoa(value);
+		tmp = ft_itoa(ft_atoi(argv[count]));
 		if (ft_strcmp(tmp, ignore(argv[count])))
 		{
 			error++;
 			break ;
 		}
 		else
-			lstadd_back(&data->stack_a, lstnew(value, -1));
+			lstadd_back(&data->stack_a, lstnew(ft_atoi(argv[count]), -1));
 		free(tmp);
 		tmp = NULL;
 	}
 	free(tmp);
 	tmp = NULL;
+	ptr = NULL;
 	if (error > 0)
 		myclear(data->stack_a, 1);
 }
@@ -64,7 +64,7 @@ void	is_sorted_stack(t_data *data)
 	while (head->next != NULL)
 	{
 		ptr = head->next;
-		while (ptr != NULL)
+		while (ptr)
 		{
 			if (head->number == ptr->number)
 			{

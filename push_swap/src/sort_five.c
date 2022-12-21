@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 22:03:52 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 20:01:15 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/21 20:50:00 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,16 @@ void	small_to_stack_b(t_data *data)
 	while (count-- > 3)
 	{
 		tmp = get_small_index(data->stack_a);
-		if (tmp >= 3)
+		if (tmp > 3)
 		{
 			tmp = (size_a + 1) - tmp;
 			while (tmp--)
 				reverse_rotate_ra(data);
+		}
+		else
+		{
+			while (--tmp)
+				rotate_ra(data);
 		}
 		push_b(data);
 		size_a--;
@@ -57,5 +62,4 @@ void	sort_five(t_data *data)
 	sort_three(data);
 	push_a(data);
 	push_a(data);
-	print(data->stack_a);
 }

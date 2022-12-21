@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 19:18:56 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/21 11:50:05 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/21 18:15:57 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,22 @@
 
 void	sort_three(t_data *data)
 {
-	int a = data->stack_a->index;
-    int b = data->stack_a->next->index;
-    int c = data->stack_a->next->next->index;
-	
-	if (a < b && b < c)
+	if (data->stack_a->index < data->stack_a->next->index
+		&& data->stack_a->next->index < data->stack_a->next->next->index)
 		return ;
-	else if (a > b && a < c)
+	else if (data->stack_a->index > data->stack_a->next->index
+		&& data->stack_a->index < data->stack_a->next->next->index)
 		swap_a(data);
-	else if (a < b)
+	else if (data->stack_a->index < data->stack_a->next->index)
 	{
 		reverse_rotate_ra(data);
-		if (a > b)
+		if (data->stack_a->index > data->stack_a->next->index)
 			swap_a(data);
 	}
-	else if (a > b)
+	else if (data->stack_a->index > data->stack_a->next->index)
 	{
 		rotate_ra(data);
-		if (a > b)
+		if (data->stack_a->index > data->stack_a->next->index)
 			swap_a(data);
 	}
 }

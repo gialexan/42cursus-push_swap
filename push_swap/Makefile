@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/20 21:57:35 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/21 16:22:21 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,6 @@ SRC_FILE = 			main.c 					\
 					lstlast.c       		\
 					lstclear.c				\
 					lstadd_back.c 			\
-					lstadd_front.c 			\
 					reverse_rotate.c		\
 					rotate.c				\
 					push.c 					\
@@ -26,6 +25,7 @@ SRC_FILE = 			main.c 					\
 					print.c					\
 					myclear.c 				\
 					auxiliary.c				\
+					sort_two.c				\
 					sort_five.c 			\
 					radix_sort.c 			\
 					sort_three.c			

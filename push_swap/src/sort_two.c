@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lstadd_front.c                                     :+:      :+:    :+:   */
+/*   sort_two.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/06 11:55:13 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/06 11:55:35 by gialexan         ###   ########.fr       */
+/*   Created: 2022/12/21 15:40:46 by gialexan          #+#    #+#             */
+/*   Updated: 2022/12/21 20:49:07 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	lstadd_front(t_stack **lst, t_stack *new)
+void	sort_two(t_data *data)
 {
-	new->next = *lst;
-	*lst = new;
+	if (data->stack_a->index > data->stack_a->next->index)
+		swap_a(data);
 }

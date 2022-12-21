@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 22:46:32 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/21 11:18:20 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/21 20:51:30 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	reverse_rotate_ra(t_data *data)
 	t_stack	*penult;
 
 	if (data->stack_a == NULL || data->stack_a->next == NULL)
-    	return;
+		return ;
 	last = data->stack_a;
 	while (last->next != NULL)
 	{
@@ -45,7 +45,7 @@ void	reverse_rotate_rb(t_data *data)
 	t_stack	*penult;
 
 	if (data->stack_b == NULL || data->stack_b->next == NULL)
-    	return;
+		return ;
 	last = data->stack_b;
 	while (last->next != NULL)
 	{
