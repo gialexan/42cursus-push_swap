@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:01:00 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/20 20:00:23 by gialexan         ###   ########.fr       */
+/*   Updated: 2022/12/21 13:37:08 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <limits.h>
+# include <stdbool.h>
 
 typedef struct s_stack
 {
@@ -41,8 +42,8 @@ void	lstadd_back(t_stack **lst, t_stack *new);
 void	lstadd_front(t_stack **lst, t_stack *new);
 
 /* Push Swap Function */
-void	push_a(t_data *data);
 void	push_b(t_data *data);
+void	push_a(t_data *data);
 void	swap_a(t_data *data);
 void	swap_b(t_data *data);
 void	swap_ss(t_data *data);
@@ -59,6 +60,7 @@ void	sorted_position(t_data *data);
 void	is_sorted_stack(t_data *data);
 void	myclear(t_stack *stack, int error);
 void	stack_up(t_data *data, char **argv);
+
 /* algorithm */
 void	sort_five(t_data *data);
 void	radix_sort(t_data *data);
