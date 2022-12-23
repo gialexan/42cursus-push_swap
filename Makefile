@@ -6,7 +6,7 @@
 #    By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/29 19:08:49 by gialexan          #+#    #+#              #
-#    Updated: 2022/12/21 16:22:21 by gialexan         ###   ########.fr        #
+#    Updated: 2022/12/22 21:01:22 by gialexan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,14 +42,14 @@ LIBFT = 			./libft/libft.a
 
 RM = 				rm -f
 
-CFLAGS = 			-g
+CFLAGS = 			-Wall -Wextra -Werror
 
-CC = 				cc $(CFLAGS)
+CC = 				gcc
 
 all:	$(NAME)
 
 $(NAME):			$(LIBFT) $(SRC_OBJ)
-					$(CC) $(SRC_OBJ) $(LIBFT) -o $(NAME)
+					$(CC) $(CFLAGS) $(SRC_OBJ) $(LIBFT) -o $(NAME)
 
 run:
 	./push_swap    1 3 5 2 200 10 8 30 32 50
