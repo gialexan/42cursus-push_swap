@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:19:10 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/21 13:45:43 by gialexan         ###   ########.fr       */
+/*   Updated: 2023/05/24 14:49:34 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,12 @@ static int	is_sorted(t_stack *stack)
 }
 
 void	radix_sort(t_data *data)
-{	
-	int		i;
+{
 	int		count;
 	int		house;
 	int		size_a;
 	int		size_b;
 
-	i = -1;
 	house = -1;
 	size_a = lstsize(data->stack_a);
 	while (!is_sorted(data->stack_a))

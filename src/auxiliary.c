@@ -6,7 +6,7 @@
 /*   By: gialexan <gialexan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 00:42:09 by gialexan          #+#    #+#             */
-/*   Updated: 2022/12/21 19:57:37 by gialexan         ###   ########.fr       */
+/*   Updated: 2023/05/24 14:49:07 by gialexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ static	char	*ignore(char *argv)
 void	stack_up(t_data *data, char **argv)
 {
 	char	*tmp;
-	char	*ptr;
 	int		count;
 	int		error;
 
@@ -48,7 +47,6 @@ void	stack_up(t_data *data, char **argv)
 	}
 	free(tmp);
 	tmp = NULL;
-	ptr = NULL;
 	if (error > 0)
 		myclear(data->stack_a, 1);
 }
