@@ -48,7 +48,7 @@ make fclean
 ```
 ## Game rules
 - The game is composed of 2 stacks named A and B.
-- To start with: A contains a random number of either positive or negative numbers without any duplicates. B is empty
+- To start with: A contains randons numbers of either positive or negative numbers without any duplicates. B is empty
 - The goal is to sort in ascending order numbers into stack A.
 - To do this you have the following operations at your disposal:
 
