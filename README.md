@@ -29,7 +29,7 @@ Push_swap is an individual project at [42](42sp.org.br) that entails creating a 
 
 ```bash
 # Clone the project and access the folder
-git clone https://github.com/gialexan/push_swap-42 && cd push_swap-42/
+git clone https://github.com/gialexan/42cursus-push_swap && cd 42cursus-push_swap/
 # Run make so you can build the library
 make
 # Execute your program
